@@ -10,8 +10,8 @@ const useTest = () => {
   useEffect(() => {
     async function fetchName() {
       try {
-        const name = await fetchTest();
-        setTest(`${name.firstName} ${name.lastName}`);
+        const data = await fetchTest();
+        setTest(`${data.name}`);
       } catch (error) {
         setError(error);
       } finally {

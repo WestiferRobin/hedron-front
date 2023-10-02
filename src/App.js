@@ -9,7 +9,6 @@ const App = () => {
     <div>Game Component against model: {error ? "NOT VALID" : opponentName}</div>
     <MyGodotGame />
   </div>
-  // return <GameComponent />
 }
 
 export default App;
