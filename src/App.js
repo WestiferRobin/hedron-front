@@ -6,8 +6,10 @@ const App = () => {
 
   const {opponentName, error} = useTest();
   return <div>
-    <div>Game Component against model: {error ? "NOT VALID" : opponentName}</div>
-    <UnityComponent gameName="hedron" gameSize={{ width: '90vw', height: '90vh' }} />
+    <div style={{height: "4.65vh", backgroundColor: "red"}}>Game Component against model: {error ? "NOT VALID" : opponentName}</div>
+    <div style={{margin: "1%", height: "91vh"}}>
+      <UnityComponent gameName="hedron" gameSize={{ width: '100%', height: '100%' }} />
+    </div>
   </div>
 }
 
